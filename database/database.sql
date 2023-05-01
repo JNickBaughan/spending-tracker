@@ -16,6 +16,12 @@ CREATE TABLE Account (
     AccountDescription VArchar(250)
 )
 
+INSERT INTO Account (AccountName, AccountType, AccountNumber, AccountDescription)
+VALUES 
+('Chase Sapphire', 2, '************ ****', 'Joint Chase Card'),
+('Chase Freedom', 2, '************ ****', 'Joint Chase Card'),
+('Discover', 2, '************ ****', 'Joint Discover Card');
+
 CREATE TABLE TransactionType (
     TransactionTypeID INT IDENTITY(1,1) PRIMARY KEY,
     TransactionName VARCHAR(150)
