@@ -32,6 +32,7 @@ VALUES ('debit'), ('credit');
 
 CREATE TABLE TransactionTable (
     TransactionID INT IDENTITY(1,1) PRIMARY KEY,
+    Amount SMALLMONEY NOT NULL,
     TransactionDate DATETIME NOT NULL,
     Account INT FOREIGN KEY REFERENCES Account(AccountID),
     TransactionType INT FOREIGN KEY REFERENCES TransactionType(TransactionTypeID),
